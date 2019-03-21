@@ -1,0 +1,24 @@
+.card:first-of-type{
+    border-bottom: 1px solid rgba(0,0,0,0.125) !important;
+}
+.card:nth-of-type(2){
+    border-top: 0 !important;
+}
+.badge {
+    border-radius: 0;
+    padding: 4px 5px !important;
+}
+.pendingReviews {
+    margin-bottom: -32px;
+}
+.pendingReviews .username {
+    font-weight: 100;
+}
+.pendingReviews .approve-btn {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.pendingReviews .delete-btn {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
