@@ -6,6 +6,8 @@ if (!isset($_SESSION['logged_in'])){
     header('Location: index.php');
     exit();
 }
+
+// If admin show pending reviews
 if($_SESSION['logged_in'] === "admin"){
     include('features/reviews/pending.php');
 }
@@ -14,7 +16,7 @@ if($_SESSION['logged_in'] === "admin"){
 <div class="container">
     <div class="row">
         <div class="col-md-12 mt-4" id="alert-container"></div>
-        <div class="col-md-8 offset-md-2 mt-5">
+        <div class="col-md-10 offset-md-1 mt-5 mb-5">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title mr-auto">Search a venue:</h5>
@@ -42,4 +44,5 @@ if($_SESSION['logged_in'] === "admin"){
 <script src="assets/js/ajax_get_reviews.js"></script>
 <script src="assets/js/pending_reviews_number.js"></script>
 <script src="assets/js/ajax_get_approved_reviews.js"></script>
+<script src="assets/js/ajax_add_booking.js"></script>
 <?php require_once('includes/footer.php'); ?>
